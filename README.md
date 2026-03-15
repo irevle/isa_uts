@@ -11,7 +11,7 @@
     </tr>
     <tr>
         <td>
-            Bikin layout navbar & footer
+            <s>Bikin layout navbar & footer</s>
         </td>
         <td>
             Bikin database migration & seeder *(kalo gak malas)
