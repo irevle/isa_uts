@@ -60,12 +60,12 @@
 1. Buat folder kosong, nama folder terserah.
 2. Masuk ke foldernya, terus click kanan.
 3. Dari menu tersebut, buka terminal / git bash.
-4. di terminal / git bash, ketik
+4. di terminal / git bash, ketik:
 ```sh
 $ git clone https://github.com/Louis-William-Santoso/ksmif_web.git ./
 ```
 5. <b>Pindahkan file `.env` ke folder project. Tanpa file ini, web tidak akan bisa jalan.</b>
-6. kalo sudah silahkan kalian kalo yang install docker ketik ini di terminal
+6. Pastikan DOcker sudah terinstall. Nyalakan Docker, kemudian buka terminal dan ketik:
 - $ docker compose up -d --build
 - $ docker compose php php artisan key:gen
 - $ docker compose php php artisan migrate:fresh
@@ -76,7 +76,7 @@ sampai disini harunya udah selesai setup inisialisasinya *(yang pake docker)
 1. Buat folder kosong, nama folder terserah.
 2. Masuk ke foldernya, terus click kanan.
 3. Dari menu tersebut, buka terminal / git bash.
-4. di terminal / git bash, ketik
+4. di terminal / git bash, ketik:
 ```sh
 $ git clone https://github.com/Louis-William-Santoso/ksmif_web.git ./
 ```
