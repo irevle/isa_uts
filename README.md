@@ -65,7 +65,7 @@
 $ git clone https://github.com/Louis-William-Santoso/ksmif_web.git ./
 ```
 5. <b>Pindahkan file `.env` ke folder project. Tanpa file ini, web tidak akan bisa jalan.</b>
-6. Pastikan DOcker sudah terinstall. Nyalakan Docker, kemudian buka terminal dan ketik:
+6. Pastikan Docker sudah terinstall. Nyalakan Docker, kemudian buka terminal dan ketik:
 - $ docker compose up -d --build
 - $ docker compose php php artisan key:gen
 - $ docker compose php php artisan migrate:fresh
