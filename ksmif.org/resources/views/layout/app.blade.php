@@ -9,17 +9,28 @@
     @vite('resources/css/app.css')
     <style>
         body {
-            width: 100%;
             margin: 0px;
+            width: 100%;
+            background: none;
+        }
+
+        .background {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
         }
 
         .background-pattern {
             position: fixed;
-            top: -235px;
+            top: -470px;
             left: -499px;
-            width: 200%;
-            height: 200%;
-            background: repeat 499px 235px url("images/icon/background.svg");
+            width: calc(100% + 499px);
+            height: calc(100% + 470px);
+            background: repeat 499px 235px url("images/icon/background.webp");
             animation: bg-gerak 2s ease infinite;
         }
 
@@ -28,13 +39,16 @@
                 transform: translate(0px, 0px);
             }
             100% {
-                transform: translate(499px, 235px);
+                transform: translate(499px, 470px);
             }
         }
     </style>
 </head>
 <body>
-    <div class="background-pattern"></div>
+    <div class="background">
+        <div class="background-pattern"></div>
+    </div>
+
     @include('layout.loading')
     @includeWhen($navbar != "homepage", 'layout.mainNavbar')
     @yield('content')

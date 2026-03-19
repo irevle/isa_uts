@@ -3,8 +3,7 @@
 @section('content')
     <style>
         #arrow-scroll{
-            animation: lompat 1s;
-            animation-iteration-count: infinite;
+            animation: lompat 1s infinite alternate;
         }
         @keyframes lompat{
             0%      {transform: translateY(0);}
@@ -121,7 +120,7 @@
 <script>
     setTimeout(() => {
         $('#header').addClass('text-focus-in');
-    }, 2000);
+    }, 1500);
 
 </script>
 @endsection
