@@ -4,9 +4,9 @@
             <img class="h-9" src="images/icon/home.svg" alt="" type="image/svg+xml">
             <p>Homepage</p>
         </a>
-        <a href="/about-us" class="flex p-2.5 w-fit rounded-2xl">
+        <a href="/our-team" class="flex p-2.5 w-fit rounded-2xl">
             <img class="h-9" src="images/icon/people.svg" alt="" type="image/svg+xml">
-            <p>About Us</p>
+            <p>Our Team</p>
         </a>
         <a href="/bursa-soal" class="flex p-2.5 w-fit rounded-2xl">
             <img class="h-9" src="images/icon/book.svg" alt="" type="image/svg+xml">
@@ -24,7 +24,7 @@
         </a>
         <a href="/about-us" class="flex p-2.5 w-full rounded-2xl border-2">
             <img class="h-9" src="images/icon/people.svg" alt="" type="image/svg+xml">
-            <p>About Us</p>
+            <p>Our Team</p>
         </a>
         <a href="/bursa-soal" class="flex p-2.5 w-full rounded-2xl border-2">
             <img class="h-9" src="images/icon/book.svg" alt="" type="image/svg+xml">

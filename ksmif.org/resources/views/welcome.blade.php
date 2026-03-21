@@ -66,37 +66,62 @@
     {{-- NAVBAR --}}
     @include ('layout.mainNavbar')
 
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, debitis atque velit aut doloribus maiores in voluptate, perspiciatis error consectetur commodi itaque laudantium, dicta dolores delectus similique officia. Hic, iste.
-    Quia, eos! Laudantium nihil quasi maxime, harum ducimus ipsum saepe debitis dicta officiis, itaque voluptatem ratione inventore quia quam ullam iste, maiores quaerat illo eos qui. Corporis molestiae pariatur eveniet.
-    Quidem magni aliquam cumque perferendis cum quasi distinctio maiores itaque animi quas odio mollitia, corrupti quis ratione sint. Laudantium ratione, fugiat eligendi recusandae unde dignissimos. Commodi dolorem voluptatem a corrupti.
-    Deleniti rerum odit repellat autem laudantium maxime est! Quisquam voluptate sequi, consectetur inventore facere adipisci perspiciatis natus tempore. Cumque, saepe? Vel ducimus laboriosam aliquam enim itaque architecto quas totam et!
-    Nobis accusamus, repellendus, ab quaerat sit esse odit iste velit reprehenderit ea ipsum assumenda inventore ad distinctio! Dolorum fugit magni numquam odit, incidunt temporibus est hic consequuntur quidem. Amet, quisquam!
-    Dolor, aliquid maxime mollitia, voluptate ducimus voluptatem nulla minima quaerat iusto quo adipisci pariatur fugit vel placeat praesentium error debitis facilis sed? Vero eum excepturi eius mollitia necessitatibus, consectetur voluptas.
-    Laudantium, aliquid. Officiis pariatur numquam molestias suscipit rem esse velit veritatis facere aliquid consectetur omnis ex aut sit alias, repellendus corporis minus excepturi maiores delectus. Blanditiis dolores asperiores deserunt quis.
-    Velit vitae sequi aspernatur placeat eveniet tempora inventore. Odio porro labore quo omnis ratione laboriosam? Et reprehenderit adipisci reiciendis quasi suscipit beatae, corporis enim optio voluptatum natus consequuntur dolorum dolore.
-    Voluptatem obcaecati nostrum sunt cumque aliquam? Explicabo, voluptate. Suscipit mollitia rem sequi nesciunt facere, quae reiciendis velit culpa maiores corrupti libero atque? Unde provident praesentium atque voluptatem, nemo facere similique!
-    Amet reprehenderit sunt dolores cum tempore sint. Dolores ratione ab architecto placeat tempore quidem esse, vel eveniet eaque, voluptates illo? Assumenda ea eveniet, perferendis fuga quidem similique mollitia maiores impedit!</h1>
-    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores eligendi voluptatum repellendus unde libero. Id sit mollitia eum, voluptas eius suscipit tempora fugiat sapiente quasi. Accusamus ut odit placeat dolorem!
-    Saepe accusamus veritatis laudantium deleniti perferendis vero inventore, natus laborum delectus, eaque molestiae quisquam explicabo quae reiciendis non dolores. Deleniti dignissimos enim quia. Quasi beatae autem quidem voluptate velit tempora.
-    Perferendis eum dignissimos ad eaque est enim quam aperiam. Nulla aperiam numquam laborum? Laudantium incidunt itaque iste et distinctio. Quasi enim amet numquam dignissimos unde omnis! Temporibus quam maiores magnam.
-    Eaque nesciunt sit error tempore, tempora iusto quaerat praesentium rem neque rerum laborum hic optio quidem sunt minus dolore natus a architecto veritatis provident perferendis iure? Modi praesentium pariatur quaerat.
-    Cupiditate saepe voluptatem ipsa, non molestiae obcaecati assumenda voluptatibus maiores consequuntur hic sunt eius asperiores minus, accusamus rerum illum consectetur at eaque odit sapiente? Quasi natus obcaecati maxime minima magnam?
-    Minima commodi sed aliquam praesentium dolorum tenetur impedit corporis a modi repudiandae ea, necessitatibus exercitationem placeat fugiat delectus natus. Error deserunt, natus nemo at nihil labore voluptatum soluta nostrum repellat.
-    Commodi, eaque similique? Voluptate, delectus assumenda, maiores blanditiis magnam debitis pariatur doloremque aut iusto accusantium nam sed rem quas impedit asperiores magni, repudiandae aliquam atque? Incidunt reprehenderit dolorem dolore! Ipsum.
-    Praesentium quae quasi vero officiis consequatur blanditiis mollitia aliquam nam temporibus. Sed vero reprehenderit, voluptatem atque illum, quis mollitia tenetur magnam doloremque reiciendis doloribus culpa ipsum, alias fuga rerum voluptatum.
-    Aliquid dicta provident possimus magni, facilis distinctio totam enim ullam amet excepturi nobis sit laboriosam, deleniti eos dolores? Soluta repudiandae saepe asperiores ab doloremque officia quia ipsam consequuntur eveniet enim?
-    Exercitationem accusamus eos natus eveniet maiores dolorem iste quo esse illum blanditiis quisquam numquam minus dolores, laudantium corrupti dicta error? Voluptas, officia voluptatem! Nobis quod odit voluptatum, facilis autem officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque veniam voluptate quidem fugiat est quam esse quisquam quis, cum, nobis beatae. Accusamus et quos ad, adipisci optio aspernatur mollitia.
-    Distinctio perferendis, asperiores sunt molestiae dolore excepturi reprehenderit rerum cumque accusamus, fugiat ipsum? Ratione provident dignissimos, voluptate sapiente iste odit perspiciatis cumque consequatur aliquam consectetur! Rerum ut voluptatum deleniti molestiae.
-    Corporis beatae assumenda magni voluptas ullam veniam laborum, dicta ipsam iusto optio quae expedita mollitia deleniti atque, quas magnam qui voluptate cum! Rerum dolorum ad provident, dignissimos cumque impedit modi!
-    Culpa suscipit iste placeat minus sit ipsam obcaecati eum non quas illo omnis, tempore vitae, deleniti repellendus harum dolore, recusandae earum perferendis qui magni libero! Qui incidunt optio enim accusamus?</h1>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum omnis pariatur autem ad. Esse, dolorum in enim minima voluptatem ipsum, molestias dicta inventore, nemo doloremque nostrum magni autem deserunt.
-    Quam doloribus nisi dolor culpa eveniet corporis quod iusto nemo in, facere incidunt consequuntur nihil non quis aliquid at labore amet et placeat ea dicta minima? Vel fugiat ut fugit.
-    Itaque nobis ducimus culpa non asperiores numquam iusto minima ipsa nihil natus accusamus fugiat, fuga, illo voluptates? Nesciunt neque ducimus fugit id velit, non dolore hic, cumque, eum dolor ea.</h1>
-    
-</body>
+    {{-- About Us --}}
+    <div id="aboutus" class="font-['Jersey10'] md:text-4xl text-2xl m-14">
+        <h1 class="text-6xl">ABOUT US</h1>
+        <p>An Informatics Engineering student organization, established on the University of Surabaya Campus since 1998. We are located at the TF 4.10 Building, University of Surabaya Tenggilis.</p>
+    </div>
+
+    {{-- Our Vision --}}
+    <div id="our-vision" class="font-['Jersey10'] md:text-4xl text-2xl grid place-items-center m-14 sm:p-14 ">
+        <h1 class="text-6xl te">Our Vision</h1>
+        <p > To be an organization capable of accommodating, expanding knowledge, and realizing the aspirations of engineering faculty students related to Computer Science.</p>
+    </div>
+
+    {{-- DEPARTMENT --}}
+    <div id="department" class="font-['Jersey10'] sm:text-3xl text-2xl grid place-items-center mb-20">
+        <h1 class="text-6xl">DEPARTMENT</h1>
+
+        {{-- Button --}}
+        <form action="/our-team" method="GET" class="flex mb-8">
+            <button type="submit" class="text-2xl bg-black text-white p-2 pl-4 pr-4 rounded-4xl">
+                Let's see our team
+            </button>
+            <img src="/images/icon/click_this.webp" alt="" class="absolute ml-44">
+        </form>
+
+        <div class="grid lg:grid-cols-2 grid-cols-1 place-items-center gap-14">
+            <div id="department-BPH" class="lg:col-span-2 lg: grid place-items-center">
+                <h2 class="sm:text-5xl text-4xl">BPH</h2>
+                <h3>Badan Pengurus Harian</h3>
+            </div>
+
+            <div class="grid place-items-center" id="department-IRD">
+                <h2 class="sm:text-5xl text-4xl">IRD</h2>
+                <h3>Internal Relation Department</h3>
+            </div>
+
+            <div class="grid place-items-center" id="department-PRD">
+                <h2 class="sm:text-5xl text-4xl">PRD</h2>
+                <h3>Public Relation Department</h3>
+            </div>
+
+            <div class="grid place-items-center" id="department-HRDD">
+                <h2 class="sm:text-5xl text-4xl">HRDD</h2>
+                <h3>Human Resource</h3>
+                <h3>Development Department</h3>
+            </div>
+
+            <div class="grid place-items-center" id="department-CDD">
+                <h2 class="sm:text-5xl text-4xl">CDD</h2>
+                <h3>Creative Design Department</h3>
+            </div>
+        </div>
+    </div>
 <script>
     setTimeout(() => {
         $('#header').addClass('text-focus-in');
     }, 2000);
+
 </script>
 @endsection

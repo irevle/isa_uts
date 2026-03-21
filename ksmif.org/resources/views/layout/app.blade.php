@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>{{getenv('APP_NAME')}}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="images/icon/tab-icon.png" />
@@ -8,7 +9,7 @@
     @vite('resources/css/app.css')
     <style>
         body{
-            background-image: url("images/icon/background.svg");
+            background-image: url("images/icon/background.webp");
             position: relative;
             width: 100%;
             margin: 0px;
