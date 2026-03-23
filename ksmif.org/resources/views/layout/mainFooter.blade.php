@@ -13,6 +13,10 @@
         </div>
 
         <div class="flex gap-1.5">
+            <img style="height: 24px" src="/images/icon/instagram.svg">
+            <a href="https://instagram.com/ksm_informatika">INSTAGRAM : @ksm_informatika</a>
+        </div>
+        <div class="flex gap-1.5">
             <img style="height: 24px" src="/images/icon/line.svg">
             <a href="">LINE : @test</a>
         </div>
@@ -24,11 +28,11 @@
     <div class="sm:mt-6">
         <h2 class="text-3xl">Presented By:</h2>
         <div class="flex gap-2">
-            <img style="height:40px" src="/images/icon/logo-ubaya-w.webp" alt="">
-            <img style="height:35px; filter:brightness(0%) invert(100%)" src="/images/icon/Logo-Teknik-Informatika.webp">
+            <a href="https://ubaya.ac.id"><img style="height:40px" src="/images/icon/logo-ubaya-w.webp" alt="logo-ubaya"></a>
+            <a href="https://if.ubaya.ac.id/"><img style="height:35px; filter:brightness(0%) invert(100%)" src="/images/icon/Logo-Teknik-Informatika.webp"></a>
             <img style="height:40px; filter:invert(100%)" src="/images/icon/ksmHytam.svg">
         </div>
-    </div>
+    </div></a>
 </footer>
 <script>
 $(document).ready(responsiveDocs);

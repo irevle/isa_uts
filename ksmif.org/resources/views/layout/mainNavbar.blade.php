@@ -1,4 +1,4 @@
-<nav class="font-['Jersey10'] m-2.5 text-3xl backdrop-blur-sm sticky top-2 rounded-2xl">
+<nav id="navbar" class="font-['Jersey10'] m-2.5 text-3xl backdrop-blur-sm sticky top-2 rounded-2xl">
     <div id="desktop-nav" class="flex border-4 border-dashed rounded-2xl gap-12">
         <a href="/" class="flex p-2.5 w-fit rounded-2xl">
             <img class="h-9" src="images/icon/home.svg" alt="" type="image/svg+xml">

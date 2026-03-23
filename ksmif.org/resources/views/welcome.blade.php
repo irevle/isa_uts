@@ -51,14 +51,14 @@
             <h1 class="sm:text-6xl text-4xl">"We Not Me"</h1>
 
             <div class="flex text-3xl mt-14">
-                <a class="mr-16 text-white bg-black p-3 pr-4 rounded-2xl" href="">Join Us</a>
-                <a class="p-3 rounded-2xl border-2 backdrop-blur-sm" href="">About Us</a>
+                <a class="mr-16 text-white bg-black p-3 pr-4 rounded-2xl" href="/form-pendaftaran">Join Us</a>
+                <a class="p-3 rounded-2xl border-2 backdrop-blur-sm" href="#navbar">About Us</a>
             </div>
         </div>
 
         <div id="arrow-scroll" class="text-2xl mt-9">
             <p>Scroll This Page</p>
-            <img class="ml-11 w-10 relative" src="images/icon/arrow.svg" type="image/svg+xml">
+            <img class="ml-11 w-10 relative" src="images/icon/arrow.svg" type="image/svg+xml" alt="arrow">
         </div>
     </div>
 

@@ -3,12 +3,19 @@
 <head>
     <title>{{getenv('APP_NAME')}}</title>
     <meta charset="utf-8" />
+    <meta name="description" content="KSM Informatika Universitas Surabaya (UBAYA), WE NOT ME"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="images/icon/tab-icon.png" />
     <script src="lib/jquery.js"></script>
     @vite('resources/css/app.css')
     <style>
-        body {
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-image: url("images/icon/background.webp");
+            position: relative;
+            width: 100%;
             margin: 0px;
             width: 100%;
             background: none;

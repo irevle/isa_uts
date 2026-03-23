@@ -44,12 +44,6 @@ return new class extends Migration
             $table->longText('payload');
             $table->integer('last_activity')->index();
         });
-
-        Schema::create('login_log', function(Blueprint $table){
-            $table->id();
-            $table->foreignId('members_id');
-            $table->timestamp('login_at');
-        });
     }
 
     
