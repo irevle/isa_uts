@@ -52,7 +52,7 @@
 
             <div class="flex text-3xl mt-14">
                 <a class="mr-16 text-white bg-black p-3 pr-4 rounded-2xl" href="">Join Us</a>
-                <a class="p-3 rounded-2xl border-2 backdrop-blur-sm" href="#aboutus">About Us</a>
+                <a class="p-3 rounded-2xl border-2 backdrop-blur-sm" href="#navbar">About Us</a>
             </div>
         </div>
 

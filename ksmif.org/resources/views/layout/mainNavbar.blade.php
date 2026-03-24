@@ -1,4 +1,4 @@
-<nav class="font-['Jersey10'] m-2.5 text-3xl sticky top-2 rounded-2xl">
+<nav id="navbar" class="font-['Jersey10'] m-2.5 text-3xl sticky top-2 rounded-2xl">
     <div id="desktop-nav" class="flex justify-between">
         <div id="desktop-nav-menu" class="flex w-fit border-4 border-dashed rounded-2xl gap-12 backdrop-blur-sm">
             <a href="/" class="nav-link flex p-2.5 w-fit rounded-2xl">
