@@ -10,23 +10,25 @@ return new class extends Migration
     // === Buat scheama Members baru ===
     public function up(): void
     {
-        Schema::create('members', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('full_name');
-            $table->string('email')->unique();
+            $table->string('username', 15);
+            $table->string('full_name', 45);
+            $table->string('password', 255);
+            $table->string('email', 255)->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('NRP', 9)->nullable();
             $table->string('status');
             $table->rememberToken();
             $table->timestamps();
         });
 
-        Schema::create('periode', function(Blueprint $table){
+        Schema::create('members', function(Blueprint $table){
             $table->id();
-            $table->foreignId('members_id');
-            $table->year('year');
-            $table->string('role');
+            $table->foreignId('users_id');
+            $table->year('period');
+            $table->enum('division', ['BPH', 'IRD', 'PRD', 'HRDD', 'CDD']);
+            $table->enum('role', ['Koor', 'WaKoor', 'Anggota']);
             $table->timestamps();
         });
 

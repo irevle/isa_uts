@@ -79,8 +79,8 @@
         $('nav-link').removeClass('nav-click');
         $('.nav-link').eq(0).addClass('nav-click');
     }
-    
 
+    
 </script>
 <style>
     .nav-hover{
