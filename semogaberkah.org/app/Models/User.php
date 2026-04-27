@@ -4,8 +4,12 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+
+use function Illuminate\Support\years;
+use function Symfony\Component\Clock\now;
 
 class User extends Authenticatable
 {
@@ -48,5 +52,21 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function members(): HasMany
+    {
+        return $this->hasMany(Member::class, 'users_id');
+    }
+
+    public function getMemberInfo($idUser){
+        $memberInfo = User::where('id', $idUser)->members()
+                    ->get();
+        return $memberInfo;
+    }
+
+    public function uploadSoal(): HasMany
+    {
+        return $this->hasMany(BursaSoal::class, 'uploaded_by');
     }
 }
