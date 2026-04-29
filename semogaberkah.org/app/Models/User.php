@@ -5,6 +5,7 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOneThrough;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -54,19 +55,41 @@ class User extends Authenticatable
         ];
     }
 
+    // =====================
+    // == Users - Members ==
+    // =====================
     public function members(): HasMany
     {
         return $this->hasMany(Member::class, 'users_id');
     }
 
     public function getMemberInfo($idUser){
-        $memberInfo = User::where('id', $idUser)->members()
+        $memberInfo = User::members()
+                    ->where("users_id", $idUser)
                     ->get();
         return $memberInfo;
     }
 
-    public function uploadSoal(): HasMany
+    public function getDivisionMembers($division, $period){
+        $memberDivision = User::members()
+                        ->where("period", $period)
+                        ->where("division", $division)
+                        ->get();
+        return $memberDivision;
+    }
+
+    // ========================
+    // == Users - Bursa_soal ==
+    // ========================
+    public function uploadSoal(): HasOneThrough
     {
-        return $this->hasMany(BursaSoal::class, 'uploaded_by');
+        return $this->hasOneThrough(BursaSoal::class, Matkul::class);
+    }
+
+    public function getUploadSoal($idUser){
+        $uploadSoal = User::uploadSoal()
+                    ->where('uploaded_by', $idUser)
+                    ->get();
+        return $uploadSoal;
     }
 }
