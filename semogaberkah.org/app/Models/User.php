@@ -78,7 +78,26 @@ class User extends Authenticatable
         return $memberDivision;
     }
 
-    // ========================
+    public function getOurTeam($period){        
+        if(!isset($period)){
+            if($period < date_create("10-12-2026")){
+                $period = 2025;
+            }else{
+                $period = 2026;
+            }
+        }
+
+        $memberDivision = User::members()
+                        ->where("period", $period)
+                        ->get();
+        return $memberDivision;
+    }
+
+    // ========================// $bursaSoal = BursaSoal::where('BursaSoal.year', '=', '2025')
+        //              ->get();
+
+        // $data=['navbar' => 'ourTeam',
+        //        'bursaSoal'   => $bursaSoal];
     // == Users - Bursa_soal ==
     // ========================
     public function uploadSoal(): HasOneThrough
@@ -87,7 +106,7 @@ class User extends Authenticatable
     }
 
     public function getUploadSoal($idUser){
-        $uploadSoal = User::uploadSoal()
+        $uploadSoal = User::nuploadSoal()
                     ->where('uploaded_by', $idUser)
                     ->get();
         return $uploadSoal;

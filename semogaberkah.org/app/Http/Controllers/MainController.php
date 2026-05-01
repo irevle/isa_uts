@@ -13,8 +13,7 @@ class MainController extends Controller
     }
 
     function ourTeam(){
-        $team = User::join('team', 'users.id', '=', 'team.user_id')
-                ->get();
+        $team = User::ourTeam();
 
         $data=['navbar' => 'ourTeam',
                'team'   => $team];
@@ -22,11 +21,6 @@ class MainController extends Controller
     }
 
     function bursaSoal(){
-        // $bursaSoal = BursaSoal::where('BursaSoal.year', '=', '2025')
-        //              ->get();
-
-        // $data=['navbar' => 'ourTeam',
-        //        'bursaSoal'   => $bursaSoal];
-        return view('ourTeam', compact('data'));
+        return view('BursaSoal', compact('data'));
     }
 }
