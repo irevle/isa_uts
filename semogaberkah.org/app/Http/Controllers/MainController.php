@@ -19,8 +19,4 @@ class MainController extends Controller
                'team'   => $team];
         return view('ourTeam', compact('data'));
     }
-
-    function bursaSoal(){
-        return view('BursaSoal', compact('data'));
-    }
 }
