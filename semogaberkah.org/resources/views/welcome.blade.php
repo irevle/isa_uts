@@ -5,9 +5,9 @@ if(file_exists($dir)){
         return pathinfo($file, PATHINFO_EXTENSION) === 'pdf';
     }));
 }else{
-    mkdir("documents/pdf",777,true);
-    mkdir("documents/doc",777,true);
-    mkdir("documents/img",777,true);
+    mkdir("documents/pdf",666,true);
+    mkdir("documents/doc",666,true);
+    mkdir("documents/img",666,true);
 }
 
 shuffle($files); // random
