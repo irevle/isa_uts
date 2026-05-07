@@ -81,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p style="font-size:12px;">Enter your credentials</p>
 
     <form>
-        <input type="email" placeholder="Email Address" required>
+        <input type="email" placeholder="Username / Email Address" required>
         <input type="password" placeholder="Password" required>
         <button class="btn">Sign In</button>
     </form>
