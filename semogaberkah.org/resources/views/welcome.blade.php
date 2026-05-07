@@ -1,9 +1,43 @@
 <?php
 $dir = "documents/";
+
 if(file_exists($dir)){
     $files = array_values(array_filter(scandir($dir), function($file){
-        return pathinfo($file, PATHINFO_EXTENSION) === 'pdf';
+        $file = explode("\n",$file);
+        $filepath = '';
+        foreach ($file as $val) {
+            $type = '';
+            $extension = '';
+            switch ($val) {
+                case 'pdf':
+                    $type      = $val;
+                    $extension = 'pdf';
+                    break;
+                case 'img':
+                    $type      = $val;
+                    $extension = ('png' || 'jpg');
+                    break;
+                case 'doc':
+                    $type      = $val;
+                    $extension = ('doc || docx');
+                    break;
+            }
+
+            if($type != '' && $extension != ''){
+                global $filepath;
+                $filepath[$type] = array_values(
+                        array_filter( 
+                            scandir("documents/".$type), function($path){
+                                global $extension;
+                                pathinfo($path, PATHINFO_EXTENSION) === $extension;
+                            }
+                        ));
+            }
+        }
+        var_dump($filepath);
+        return $filepath;
     }));
+
 }else{
     mkdir("documents/pdf",666,true);
     mkdir("documents/doc",666,true);
@@ -12,7 +46,6 @@ if(file_exists($dir)){
 
 shuffle($files); // random
 $files = array_slice($files, 0, 8); // ambil 8 saja
-
 $documents = [];
 
 foreach($files as $file){

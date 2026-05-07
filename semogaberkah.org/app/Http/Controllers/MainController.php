@@ -19,4 +19,9 @@ class MainController extends Controller
                'team'   => $team];
         return view('ourTeam', compact('data'));
     }
+
+    function loginPage(){
+        $data=['navbar' => 'loginPage'];
+        return view('login');
+    }
 }

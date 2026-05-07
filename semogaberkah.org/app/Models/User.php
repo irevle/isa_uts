@@ -93,13 +93,6 @@ class User extends Authenticatable
         return $memberDivision;
     }
 
-    // ========================// $bursaSoal = BursaSoal::where('BursaSoal.year', '=', '2025')
-        //              ->get();
-
-        // $data=['navbar' => 'ourTeam',
-        //        'bursaSoal'   => $bursaSoal];
-    // == Users - Bursa_soal ==
-    // ========================
     public function uploadSoal(): HasOneThrough
     {
         return $this->hasOneThrough(BursaSoal::class, Matkul::class);
