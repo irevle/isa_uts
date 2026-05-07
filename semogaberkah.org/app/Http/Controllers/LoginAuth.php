@@ -6,6 +6,7 @@ use App\Models\User;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Crypt;
 
 class LoginAuth
 {
@@ -18,7 +19,7 @@ class LoginAuth
             $username   = $req->input('username');
             $fullName   = $req->input('fullName');
             $email      = $req->input('email');
-            $passwordSalt = Hash::make($req->input('password'));
+            $password   = Hash::make($req->input('password'));
             
             if(User::where('username', $username)->first() || User::where('email', $email)->first()){
                 return response()->json(['err' => 'Data username dan email tidak bole kembar']);
@@ -26,9 +27,10 @@ class LoginAuth
             
             $user = new User();
                 $user->username  = $username;
-                $user->full_name = $fullName;
-                $user->password  = $passwordSalt;
-                $user->email     = $email;
+                $user->full_name = Crypt::encrypt($fullName);
+                $user->password  = $password;
+                $user->email     = Crypt::encrypt($email);
+                $user->email_hash= hash::make($email);
                 $user->status    = 1;
             $user->save();
             
@@ -52,7 +54,8 @@ class LoginAuth
             if($req->has('username')){
                 $user = User::where('username', $req->input('username'))->first();
             }else if($req->has('email')){
-                $user = User::where('email', $req->input('email'))->first();
+                $email = Hash::make($req->input('email'));
+                $user = User::where('email',$email)->first();
             }else{
                 return response()->json(['err' => 'Data username/email tidak ada!'], 400);
             }
