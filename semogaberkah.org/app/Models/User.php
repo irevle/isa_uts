@@ -26,7 +26,6 @@ class User extends Authenticatable
         'username',
         'full_name',
         'email',
-        'email_hash',
         'password',
         'NRP',
         'status',

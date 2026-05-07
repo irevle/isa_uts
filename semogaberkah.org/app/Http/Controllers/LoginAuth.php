@@ -29,8 +29,7 @@ class LoginAuth
                 $user->username  = $username;
                 $user->full_name = Crypt::encrypt($fullName);
                 $user->password  = $password;
-                $user->email     = Crypt::encrypt($email);
-                $user->email_hash= hash::make($email);
+                $user->email     = $email;
                 $user->status    = 1;
             $user->save();
             
@@ -49,15 +48,17 @@ class LoginAuth
     function login(Request $req){
         if(!$req->has('password')){
             return response()->json(['err' => 'Data password kosong!'], 400);
+        }else if(!$req->has('login_data')){
+            return response()->json(['err' => 'Data Username / email kosong!'], 400);
         }
+
         try{
-            if($req->has('username')){
-                $user = User::where('username', $req->input('username'))->first();
-            }else if($req->has('email')){
-                $email = Hash::make($req->input('email'));
-                $user = User::where('email',$email)->first();
+            $dataUser = $req->input('login_data');
+
+            if(filter_var($req->input('login_data'), FILTER_VALIDATE_EMAIL)){
+
             }else{
-                return response()->json(['err' => 'Data username/email tidak ada!'], 400);
+                $user = User::where('username', $dataUser)->first();
             }
 
             $passwordCheck = Hash::check($req->input('password'), $user->password);

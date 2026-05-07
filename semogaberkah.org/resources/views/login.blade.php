@@ -17,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Login</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="/lib/jquery.js"></script>
     <style>
         body {
@@ -80,10 +81,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h2>Sign In</h2>
     <p style="font-size:12px;">Enter your credentials</p>
 
-    <form>
-        <input type="email" placeholder="Username / Email Address" required>
-        <input type="password" placeholder="Password" required>
-        <button class="btn">Sign In</button>
+    <form id="formLogin">
+        <input type="text" id="usernameEmailLogin" placeholder="Username / Email Address" required>
+        <input type="password" id="passwordLogin" placeholder="Password" required>
+        <button type="button" class="btn" id="btnLogin">Sign In</button>
     </form>
 
     <div class="link">
@@ -98,11 +99,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p style="font-size:12px;">Create your account</p>
 
     <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <input type="password" placeholder="Confirm Password" required>
-        <button class="btn">Create Account</button>
+        <input id="fullNameRegist" type="text" placeholder="Full Name" required>
+        <input id="usernameRegist" type="text" placeholder="UserName" required>
+        <input id="emailRegist" type="email" placeholder="Email" required>
+        <input id='passwordRegist' type="password" placeholder="Password" required>
+        <input id='passwordConfirmRegist' type="password" placeholder="Confirm Password" required>
+        <button class="btn" id="btnRegist">Create Account</button>
     </form>
 
     <div class="link">
@@ -158,6 +160,63 @@ $(document).ready(function(){
         $('#forgot').show();
     });
 
+});
+
+// Login
+$('#btnLogin').click(function (e) { 
+    let userInfo = $('#usernameEmailLogin').val();
+    let password = $('#passwordLogin').val();
+    let form     = document.getElementById('formLogin');
+
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return; 
+    }
+
+    $.ajax({
+        type: "POST",
+        url: "/login-page/login",
+        data: {
+            'login_data'  : userInfo,
+            'password'    : password
+        },
+        headers:{
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (response) {
+            if(response.status){
+
+            }
+        }
+    });
+});
+
+// Regist
+$('#btnRegist').click(function(){
+    let fullName    = $("#fullNameRegist").val();
+    let userName    = $('#usernameRegist').val();
+    let password    = $('#passwordRegist').val();
+    let passwordConf= $('#passwordConfirmRegist').val();
+    let email       = $('#emailRegist').val();
+
+    if(password === passwordConf){
+        $.ajax({
+            type: "POST",
+            url: "/login-page/regist",
+            data: {
+                'username': userName;
+                'fullName': fullName;
+                'email'   : email;
+                'password': password;
+            },
+            headers:{
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            success: function (response) {
+                
+            }
+        });
+    }
 });
 </script>
 

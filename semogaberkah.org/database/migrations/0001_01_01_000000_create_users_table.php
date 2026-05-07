@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('password', 255);
             $table->string('email', 255)->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('email_hash',255);
             $table->string('NRP', 9)->nullable();
             $table->string('status');
             $table->rememberToken();
